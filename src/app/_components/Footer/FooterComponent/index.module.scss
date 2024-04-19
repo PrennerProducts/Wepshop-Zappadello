@@ -24,6 +24,7 @@
   flex-wrap: wrap;
   gap: calc(var(--base) / 2) var(--base);
 
+
   @include small-break {
     margin-top: 30px;
     flex-direction: column;
@@ -57,3 +58,4 @@
 .hide {
   display: none;
 }
+

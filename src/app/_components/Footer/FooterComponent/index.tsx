@@ -35,39 +35,40 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
           ))}
         </ul>
       </Gutter>
-      <div className={classes.footer}></div>
-      <Gutter>
-        <div className={classes.wrap}>
-          <Link href="/">
-            <Image src="/logo-white.svg" alt="logo" width={580} height={180} />
-          </Link>
-          <p>{footer.copyright}</p>
+      <div className={classes.footer}>
+        <Gutter>
+          <div className={classes.wrap}>
+            <Link href="/">
+              <Image src="/logo-white.svg" alt="logo" width={170} height={50} />
+            </Link>
+            <p className={classes.copyright}>{footer.copyright}</p>
 
-          <div className="classes.socialLinks">
-            {navitems.map(item => {
-              const icon = item?.link?.icon as Media
+            <div className="classes.socialLinks">
+              {navitems.map(item => {
+                const icon = item?.link?.icon as Media
 
-              return (
-                <Button
-                  key={item.link.label}
-                  el="link"
-                  href={item.link.url}
-                  newTab={true}
-                  className={classes.socialLinkItem}
-                >
-                  <Image
-                    src={icon?.url}
-                    alt={item.link.label}
-                    width={24}
-                    height={24}
+                return (
+                  <Button
+                    key={item.link.label}
+                    el="link"
+                    href={item.link.url}
+                    newTab={true}
                     className={classes.socialLinkItem}
-                  />
-                </Button>
-              )
-            })}
+                  >
+                    <Image
+                      src={icon?.url}
+                      alt={item.link.label}
+                      width={36}
+                      height={36}
+                      className={classes.socialLinkItem}
+                    />
+                  </Button>
+                )
+              })}
+            </div>
           </div>
-        </div>
-      </Gutter>
+        </Gutter>
+      </div>
     </footer>
   )
 }
