@@ -1,5 +1,30 @@
 # Payload E-Commerce Template
 
+## Add Components
+
+We need changes in three places:
+
+1. globals.ts (src/app/_graphql)  (app globals)
+2. Footer.ts (src/payload/globals) (payload globals)
+3. payload-types.ts (src/payload) (payload)
+
+Then run:
+
+yarn payload generate:graphQLSchema
+
+ yarn generate:types
+
+---
+
+## Add icons to Links
+
+1. _graphql/link (app/_graphql/link) add icion{ url  }
+2. src/payload/link.ts
+3. yarn payload generate:graphQLSchema
+4. yarn generate:types
+
+---
+
 This is the official [Payload E-Commerce Template](https://github.com/payloadcms/payload/blob/main/templates/ecommerce). Use it to power e-commerce businesses and online stores of all sizes. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
 
 This template is right for you if you are selling:
@@ -304,7 +329,7 @@ To seed the database with a few products and pages you can run `yarn seed`. This
 
 >In a monorepo when routes are bootstrapped to the same host, they can conflict with Payload's own routes if they have the same name. In our template we've named the Nextjs API routes to `next` to avoid this conflict.
 >
->This can happen with any other routes conflicting with Payload such as `admin` and we recommend using different names for custom routes.  
+>This can happen with any other routes conflicting with Payload such as `admin` and we recommend using different names for custom routes.
 >Alternatively you can also rename Payload's own routes via the [configuration](https://payloadcms.com/docs/configuration/overview).
 
 ## Production
