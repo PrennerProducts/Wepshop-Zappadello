@@ -3,9 +3,9 @@
 import React, { Fragment, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-import { Button } from '../../../../_components/Button'
-import { Message } from '../../../../_components/Message'
-import { useCart } from '../../../../_providers/Cart'
+import { Button } from '../../../_components/Button'
+import { Message } from '../../../_components/Message'
+import { useCart } from '../../../_providers/Cart'
 
 import classes from './index.module.scss'
 

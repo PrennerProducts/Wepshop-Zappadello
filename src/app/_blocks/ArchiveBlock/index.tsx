@@ -32,6 +32,7 @@ export const ArchiveBlock: React.FC<
         </Gutter>
       )}
       <CollectionArchive
+        key={id} // neu dazu lt GPT
         populateBy={populateBy}
         relationTo={relationTo}
         populatedDocs={populatedDocs}

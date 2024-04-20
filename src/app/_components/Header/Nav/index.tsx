@@ -39,7 +39,8 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
           onClick={() => (window.location.href = '/login')}
         />
       )}
-      {user && <CartLink />}
+      {/* just commented it out because of two Cart links in the nav appeared after adding items  to chart */}
+      {/* {user && <CartLink />} */}
     </nav>
   )
 }
