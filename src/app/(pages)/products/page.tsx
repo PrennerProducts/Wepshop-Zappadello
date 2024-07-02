@@ -6,10 +6,10 @@ import { fetchDoc } from '../../_api/fetchDoc'
 import { fetchDocs } from '../../_api/fetchDocs'
 import { Blocks } from '../../_components/Blocks'
 import { Gutter } from '../../_components/Gutter'
+import { HR } from '../../_components/HR'
 import Filters from './Filters'
 
 import classes from './index.module.scss'
-import { HR } from '../../_components/HR'
 
 const Products = async () => {
   const { isEnabled: isDraftMode } = draftMode()
